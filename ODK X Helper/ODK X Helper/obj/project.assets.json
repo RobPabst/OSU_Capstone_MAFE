@@ -64,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Home\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\ODK X Helper.csproj",
+      "projectUniqueName": "C:\\Users\\Joey\\Desktop\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\ODK X Helper.csproj",
       "projectName": "ODK X Helper",
-      "projectPath": "D:\\Home\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\ODK X Helper.csproj",
+      "projectPath": "C:\\Users\\Joey\\Desktop\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\ODK X Helper.csproj",
       "packagesPath": "C:\\Users\\Joey\\.nuget\\packages\\",
-      "outputPath": "D:\\Home\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\obj\\",
+      "outputPath": "C:\\Users\\Joey\\Desktop\\dev\\classes\\capstone\\OSU_Capstone_MAFE\\ODK X Helper\\ODK X Helper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Joey\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -110,24 +110,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.0.1, 3.0.1]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.0.1, 3.0.1]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[3.0.0, 3.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -136,7 +118,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

@@ -94,9 +94,31 @@
         "display": {
           "prompt": {
             "text": "DBH (cm)"
+          },
+          "constraint_message": {
+            "text": "DBH != 123."
           }
         },
+        "constraint": "(function() { if (data('dbh') == \"123\") { return true;} alert('DBH incorrect'); return false;}) ()",
         "_row_num": 6
+      },
+      {
+        "clause": "if",
+        "condition": "data('dbh') != 123",
+        "_row_num": 7
+      },
+      {
+        "type": "note",
+        "display": {
+          "prompt": {
+            "text": "Dbh isnt right."
+          }
+        },
+        "_row_num": 8
+      },
+      {
+        "clause": "end if",
+        "_row_num": 9
       },
       {
         "type": "select_one_integer",
@@ -107,7 +129,7 @@
             "text": "Status"
           }
         },
-        "_row_num": 7
+        "_row_num": 10
       },
       {
         "type": "select_one_dropdown",
@@ -118,7 +140,7 @@
             "text": "Canopy class"
           }
         },
-        "_row_num": 8
+        "_row_num": 11
       },
       {
         "type": "decimal",
@@ -128,7 +150,7 @@
             "text": "Crown ratio (%)"
           }
         },
-        "_row_num": 9
+        "_row_num": 12
       },
       {
         "type": "select_one_integer",
@@ -139,7 +161,7 @@
             "text": "Overall vigor (OV)"
           }
         },
-        "_row_num": 10
+        "_row_num": 13
       },
       {
         "type": "select_one_integer",
@@ -150,7 +172,7 @@
             "text": "Main stem (MS)"
           }
         },
-        "_row_num": 11
+        "_row_num": 14
       },
       {
         "type": "select_one_integer",
@@ -161,7 +183,7 @@
             "text": "Rooting"
           }
         },
-        "_row_num": 12
+        "_row_num": 15
       },
       {
         "type": "decimal",
@@ -171,7 +193,7 @@
             "text": "Lean angle (deg)"
           }
         },
-        "_row_num": 13
+        "_row_num": 16
       },
       {
         "type": "decimal",
@@ -181,7 +203,7 @@
             "text": "Crown percentage"
           }
         },
-        "_row_num": 14
+        "_row_num": 17
       },
       {
         "type": "decimal",
@@ -191,7 +213,7 @@
             "text": "Tree percentage"
           }
         },
-        "_row_num": 15
+        "_row_num": 18
       },
       {
         "type": "note",
@@ -200,7 +222,7 @@
             "text": "Mapping"
           }
         },
-        "_row_num": 16
+        "_row_num": 19
       },
       {
         "type": "integer",
@@ -210,7 +232,7 @@
             "text": "From (tag)"
           }
         },
-        "_row_num": 17
+        "_row_num": 20
       },
       {
         "type": "decimal",
@@ -220,7 +242,7 @@
             "text": "Distance (m)"
           }
         },
-        "_row_num": 18
+        "_row_num": 21
       },
       {
         "type": "decimal",
@@ -230,7 +252,7 @@
             "text": "Azimuth"
           }
         },
-        "_row_num": 19
+        "_row_num": 22
       },
       {
         "type": "note",
@@ -239,7 +261,7 @@
             "text": "Comments"
           }
         },
-        "_row_num": 20
+        "_row_num": 23
       },
       {
         "type": "select_one_dropdown",
@@ -250,7 +272,7 @@
             "text": "Comment 1"
           }
         },
-        "_row_num": 21
+        "_row_num": 24
       },
       {
         "type": "select_one_dropdown",
@@ -261,7 +283,7 @@
             "text": "Comment 2"
           }
         },
-        "_row_num": 22
+        "_row_num": 25
       },
       {
         "type": "select_one_dropdown",
@@ -272,7 +294,7 @@
             "text": "Comment 3"
           }
         },
-        "_row_num": 23
+        "_row_num": 26
       },
       {
         "type": "text",
@@ -282,11 +304,11 @@
             "text": "Custom comment"
           }
         },
-        "_row_num": 24
+        "_row_num": 27
       },
       {
         "clause": "end screen",
-        "_row_num": 25
+        "_row_num": 28
       }
     ],
     "choices": [
@@ -2510,7 +2532,7 @@
       "status": {
         "_defn": [
           {
-            "_row_num": 7,
+            "_row_num": 10,
             "section_name": "survey"
           }
         ],
@@ -2521,7 +2543,7 @@
       "canopy_class": {
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 11,
             "section_name": "survey"
           }
         ],
@@ -2532,7 +2554,7 @@
       "crown_ratio": {
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 12,
             "section_name": "survey"
           }
         ],
@@ -2542,7 +2564,7 @@
       "overall_vigor": {
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 13,
             "section_name": "survey"
           }
         ],
@@ -2553,7 +2575,7 @@
       "main_stem": {
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 14,
             "section_name": "survey"
           }
         ],
@@ -2564,7 +2586,7 @@
       "rooting": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 15,
             "section_name": "survey"
           }
         ],
@@ -2575,7 +2597,7 @@
       "lean_angle": {
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 16,
             "section_name": "survey"
           }
         ],
@@ -2585,7 +2607,7 @@
       "crown_percentage": {
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 17,
             "section_name": "survey"
           }
         ],
@@ -2595,7 +2617,7 @@
       "tree_percentage": {
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 18,
             "section_name": "survey"
           }
         ],
@@ -2605,7 +2627,7 @@
       "from_tag": {
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 20,
             "section_name": "survey"
           }
         ],
@@ -2615,7 +2637,7 @@
       "distance": {
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 21,
             "section_name": "survey"
           }
         ],
@@ -2625,7 +2647,7 @@
       "azimuth": {
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 22,
             "section_name": "survey"
           }
         ],
@@ -2635,7 +2657,7 @@
       "comment_1": {
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 24,
             "section_name": "survey"
           }
         ],
@@ -2646,7 +2668,7 @@
       "comment_2": {
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 25,
             "section_name": "survey"
           }
         ],
@@ -2657,7 +2679,7 @@
       "comment_3": {
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 26,
             "section_name": "survey"
           }
         ],
@@ -2668,7 +2690,7 @@
       "comment_custom": {
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 27,
             "section_name": "survey"
           }
         ],
@@ -2738,14 +2760,32 @@
             "display": {
               "prompt": {
                 "text": "DBH (cm)"
+              },
+              "constraint_message": {
+                "text": "DBH != 123."
               }
             },
+            "constraint": "(function() { if (data('dbh') == \"123\") { return true;} alert('DBH incorrect'); return false;}) ()",
             "_row_num": 6,
             "__rowNum__": 5,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
             "promptIdx": 3
+          },
+          {
+            "type": "note",
+            "display": {
+              "prompt": {
+                "text": "Dbh isnt right."
+              }
+            },
+            "_row_num": 8,
+            "__rowNum__": 7,
+            "_token_type": "prompt",
+            "_type": "note",
+            "_branch_label_enclosing_screen": "survey/_screen2",
+            "promptIdx": 4
           },
           {
             "type": "select_one_integer",
@@ -2756,12 +2796,12 @@
                 "text": "Status"
               }
             },
-            "_row_num": 7,
-            "__rowNum__": 6,
+            "_row_num": 10,
+            "__rowNum__": 9,
             "_token_type": "prompt",
             "_type": "select_one_integer",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 4
+            "promptIdx": 5
           },
           {
             "type": "select_one_dropdown",
@@ -2772,12 +2812,12 @@
                 "text": "Canopy class"
               }
             },
-            "_row_num": 8,
-            "__rowNum__": 7,
+            "_row_num": 11,
+            "__rowNum__": 10,
             "_token_type": "prompt",
             "_type": "select_one_dropdown",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 5
+            "promptIdx": 6
           },
           {
             "type": "decimal",
@@ -2787,12 +2827,12 @@
                 "text": "Crown ratio (%)"
               }
             },
-            "_row_num": 9,
-            "__rowNum__": 8,
+            "_row_num": 12,
+            "__rowNum__": 11,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 6
+            "promptIdx": 7
           },
           {
             "type": "select_one_integer",
@@ -2803,12 +2843,12 @@
                 "text": "Overall vigor (OV)"
               }
             },
-            "_row_num": 10,
-            "__rowNum__": 9,
+            "_row_num": 13,
+            "__rowNum__": 12,
             "_token_type": "prompt",
             "_type": "select_one_integer",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 7
+            "promptIdx": 8
           },
           {
             "type": "select_one_integer",
@@ -2819,12 +2859,12 @@
                 "text": "Main stem (MS)"
               }
             },
-            "_row_num": 11,
-            "__rowNum__": 10,
+            "_row_num": 14,
+            "__rowNum__": 13,
             "_token_type": "prompt",
             "_type": "select_one_integer",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 8
+            "promptIdx": 9
           },
           {
             "type": "select_one_integer",
@@ -2835,12 +2875,12 @@
                 "text": "Rooting"
               }
             },
-            "_row_num": 12,
-            "__rowNum__": 11,
+            "_row_num": 15,
+            "__rowNum__": 14,
             "_token_type": "prompt",
             "_type": "select_one_integer",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 9
+            "promptIdx": 10
           },
           {
             "type": "decimal",
@@ -2850,12 +2890,12 @@
                 "text": "Lean angle (deg)"
               }
             },
-            "_row_num": 13,
-            "__rowNum__": 12,
+            "_row_num": 16,
+            "__rowNum__": 15,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 10
+            "promptIdx": 11
           },
           {
             "type": "decimal",
@@ -2865,12 +2905,12 @@
                 "text": "Crown percentage"
               }
             },
-            "_row_num": 14,
-            "__rowNum__": 13,
+            "_row_num": 17,
+            "__rowNum__": 16,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 11
+            "promptIdx": 12
           },
           {
             "type": "decimal",
@@ -2880,12 +2920,12 @@
                 "text": "Tree percentage"
               }
             },
-            "_row_num": 15,
-            "__rowNum__": 14,
+            "_row_num": 18,
+            "__rowNum__": 17,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 12
+            "promptIdx": 13
           },
           {
             "type": "note",
@@ -2894,12 +2934,12 @@
                 "text": "Mapping"
               }
             },
-            "_row_num": 16,
-            "__rowNum__": 15,
+            "_row_num": 19,
+            "__rowNum__": 18,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 13
+            "promptIdx": 14
           },
           {
             "type": "integer",
@@ -2909,12 +2949,12 @@
                 "text": "From (tag)"
               }
             },
-            "_row_num": 17,
-            "__rowNum__": 16,
+            "_row_num": 20,
+            "__rowNum__": 19,
             "_token_type": "prompt",
             "_type": "integer",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 14
+            "promptIdx": 15
           },
           {
             "type": "decimal",
@@ -2924,12 +2964,12 @@
                 "text": "Distance (m)"
               }
             },
-            "_row_num": 18,
-            "__rowNum__": 17,
+            "_row_num": 21,
+            "__rowNum__": 20,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 15
+            "promptIdx": 16
           },
           {
             "type": "decimal",
@@ -2939,12 +2979,12 @@
                 "text": "Azimuth"
               }
             },
-            "_row_num": 19,
-            "__rowNum__": 18,
+            "_row_num": 22,
+            "__rowNum__": 21,
             "_token_type": "prompt",
             "_type": "decimal",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 16
+            "promptIdx": 17
           },
           {
             "type": "note",
@@ -2953,12 +2993,12 @@
                 "text": "Comments"
               }
             },
-            "_row_num": 20,
-            "__rowNum__": 19,
+            "_row_num": 23,
+            "__rowNum__": 22,
             "_token_type": "prompt",
             "_type": "note",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 17
+            "promptIdx": 18
           },
           {
             "type": "select_one_dropdown",
@@ -2969,12 +3009,12 @@
                 "text": "Comment 1"
               }
             },
-            "_row_num": 21,
-            "__rowNum__": 20,
+            "_row_num": 24,
+            "__rowNum__": 23,
             "_token_type": "prompt",
             "_type": "select_one_dropdown",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 18
+            "promptIdx": 19
           },
           {
             "type": "select_one_dropdown",
@@ -2985,12 +3025,12 @@
                 "text": "Comment 2"
               }
             },
-            "_row_num": 22,
-            "__rowNum__": 21,
+            "_row_num": 25,
+            "__rowNum__": 24,
             "_token_type": "prompt",
             "_type": "select_one_dropdown",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 19
+            "promptIdx": 20
           },
           {
             "type": "select_one_dropdown",
@@ -3001,12 +3041,12 @@
                 "text": "Comment 3"
               }
             },
-            "_row_num": 23,
-            "__rowNum__": 22,
+            "_row_num": 26,
+            "__rowNum__": 25,
             "_token_type": "prompt",
             "_type": "select_one_dropdown",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 20
+            "promptIdx": 21
           },
           {
             "type": "text",
@@ -3016,24 +3056,26 @@
                 "text": "Custom comment"
               }
             },
-            "_row_num": 24,
-            "__rowNum__": 23,
+            "_row_num": 27,
+            "__rowNum__": 26,
             "_token_type": "prompt",
             "_type": "text",
             "_branch_label_enclosing_screen": "survey/_screen2",
-            "promptIdx": 21
+            "promptIdx": 22
           },
           {
             "_token_type": "prompt",
             "type": "contents",
             "_type": "contents",
-            "_row_num": 26,
-            "_branch_label_enclosing_screen": "survey/_screen26",
-            "promptIdx": 22
+            "_row_num": 29,
+            "_branch_label_enclosing_screen": "survey/_screen29",
+            "promptIdx": 23
           }
         ],
         "validation_tag_map": {
-          "finalize": []
+          "finalize": [
+            3
+          ]
         },
         "operations": [
           {
@@ -3043,23 +3085,23 @@
             "_token_type": "begin_screen",
             "_end_screen_clause": {
               "clause": "end screen",
-              "_row_num": 25,
-              "__rowNum__": 24,
+              "_row_num": 28,
+              "__rowNum__": 27,
               "_token_type": "end_screen"
             },
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nactivePromptIndicies.push(4);\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(0);\nactivePromptIndicies.push(1);\nactivePromptIndicies.push(2);\nactivePromptIndicies.push(3);\nif (data('dbh') != 123) {\nactivePromptIndicies.push(4);\n}\nactivePromptIndicies.push(5);\nactivePromptIndicies.push(6);\nactivePromptIndicies.push(7);\nactivePromptIndicies.push(8);\nactivePromptIndicies.push(9);\nactivePromptIndicies.push(10);\nactivePromptIndicies.push(11);\nactivePromptIndicies.push(12);\nactivePromptIndicies.push(13);\nactivePromptIndicies.push(14);\nactivePromptIndicies.push(15);\nactivePromptIndicies.push(16);\nactivePromptIndicies.push(17);\nactivePromptIndicies.push(18);\nactivePromptIndicies.push(19);\nactivePromptIndicies.push(20);\nactivePromptIndicies.push(21);\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
             "operationIdx": 0
           },
           {
             "_token_type": "exit_section",
             "clause": "exit section",
-            "_row_num": 26,
+            "_row_num": 29,
             "operationIdx": 1
           },
           {
-            "_row_num": 26,
+            "_row_num": 29,
             "_token_type": "begin_screen",
-            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(22);\n\nreturn activePromptIndicies;\n}\n",
+            "_screen_block": "function() {var activePromptIndicies = [];\nactivePromptIndicies.push(23);\n\nreturn activePromptIndicies;\n}\n",
             "screen": {
               "hideInBackHistory": true
             },
@@ -3068,14 +3110,14 @@
           {
             "_token_type": "resume",
             "clause": "resume",
-            "_row_num": 26,
+            "_row_num": 29,
             "operationIdx": 3
           }
         ],
         "branch_label_map": {
           "_screen2": 0,
           "_contents": 2,
-          "_screen26": 2
+          "_screen29": 2
         }
       },
       "initial": {
@@ -3313,7 +3355,7 @@
       "status": {
         "_defn": [
           {
-            "_row_num": 7,
+            "_row_num": 10,
             "section_name": "survey"
           }
         ],
@@ -3327,7 +3369,7 @@
       "canopy_class": {
         "_defn": [
           {
-            "_row_num": 8,
+            "_row_num": 11,
             "section_name": "survey"
           }
         ],
@@ -3341,7 +3383,7 @@
       "crown_ratio": {
         "_defn": [
           {
-            "_row_num": 9,
+            "_row_num": 12,
             "section_name": "survey"
           }
         ],
@@ -3354,7 +3396,7 @@
       "overall_vigor": {
         "_defn": [
           {
-            "_row_num": 10,
+            "_row_num": 13,
             "section_name": "survey"
           }
         ],
@@ -3368,7 +3410,7 @@
       "main_stem": {
         "_defn": [
           {
-            "_row_num": 11,
+            "_row_num": 14,
             "section_name": "survey"
           }
         ],
@@ -3382,7 +3424,7 @@
       "rooting": {
         "_defn": [
           {
-            "_row_num": 12,
+            "_row_num": 15,
             "section_name": "survey"
           }
         ],
@@ -3396,7 +3438,7 @@
       "lean_angle": {
         "_defn": [
           {
-            "_row_num": 13,
+            "_row_num": 16,
             "section_name": "survey"
           }
         ],
@@ -3409,7 +3451,7 @@
       "crown_percentage": {
         "_defn": [
           {
-            "_row_num": 14,
+            "_row_num": 17,
             "section_name": "survey"
           }
         ],
@@ -3422,7 +3464,7 @@
       "tree_percentage": {
         "_defn": [
           {
-            "_row_num": 15,
+            "_row_num": 18,
             "section_name": "survey"
           }
         ],
@@ -3435,7 +3477,7 @@
       "from_tag": {
         "_defn": [
           {
-            "_row_num": 17,
+            "_row_num": 20,
             "section_name": "survey"
           }
         ],
@@ -3448,7 +3490,7 @@
       "distance": {
         "_defn": [
           {
-            "_row_num": 18,
+            "_row_num": 21,
             "section_name": "survey"
           }
         ],
@@ -3461,7 +3503,7 @@
       "azimuth": {
         "_defn": [
           {
-            "_row_num": 19,
+            "_row_num": 22,
             "section_name": "survey"
           }
         ],
@@ -3474,7 +3516,7 @@
       "comment_1": {
         "_defn": [
           {
-            "_row_num": 21,
+            "_row_num": 24,
             "section_name": "survey"
           }
         ],
@@ -3488,7 +3530,7 @@
       "comment_2": {
         "_defn": [
           {
-            "_row_num": 22,
+            "_row_num": 25,
             "section_name": "survey"
           }
         ],
@@ -3502,7 +3544,7 @@
       "comment_3": {
         "_defn": [
           {
-            "_row_num": 23,
+            "_row_num": 26,
             "section_name": "survey"
           }
         ],
@@ -3516,7 +3558,7 @@
       "comment_custom": {
         "_defn": [
           {
-            "_row_num": 24,
+            "_row_num": 27,
             "section_name": "survey"
           }
         ],
